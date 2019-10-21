@@ -1,31 +1,27 @@
 <p-growl [(value)]='msg'></p-growl>
-<ul class="nav justify-content-end">
-    <h4 class="header">Edit Articles</h4>
-    <li class="nav-item">
-        <a class="nav-link active" [routerLink]="['/dashboard']" routerLinkActive="router-link-active"><span
-                class='fa fa-group'></span> Dashboard</a>
-    </li>
-    <div class="vertical">
-
-    </div>
-    <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/knowledge-base/myarticle']" routerLinkActive="router-link-active"><span
-                class='fa fa-list'></span>My Articles</a>
-    </li>
-    <div class="vertical">
-
-    </div>
-    <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/knowledge-base/add']" routerLinkActive="router-link-active"><span
-                class='fa fa-book'></span>Add Articles</a>
-    </li>
-    <div class="vertical">
-
-    </div>
-</ul>
+<nav class="navbar navbar-expand-lg">
+    <h4>Edit Article</h4>
+        <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto nav-pills">
+                        <li class="nav-item">
+                                <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="router-link-active"><span
+                                        class='fa fa-group'></span>Dash board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" [routerLink]="['/knowledge-base']" routerLinkActive="router-link-active"><span
+                                        class='fa fa-list'></span>My Articles</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" [routerLink]="['/knowledge-base/add']" routerLinkActive="active"><span
+                                        class='fa fa-plus-circle'></span>Add Article</a>
+                            </li>
+                </ul>
+        </div>
+</nav>
 
 <div class="main-content">
-    <div class="container-fluid second-card">
+        <div style='background-color: #f1f3f6;min-height: 907px' class="container-fluid">
+
         <form [formGroup]="editForm" (ngSubmit)="onEditArticle()">
             <div class="container">
                 <br />

@@ -146,6 +146,13 @@ $topnav-background-color: #222;
     }
 }
 
+@media (max-width: 992px) {
+    .kbmenu {
+        display: none;
+    }
+}
+
+
 ::-webkit-scrollbar {
     width: 8px;
 }
