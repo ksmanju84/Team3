@@ -62,17 +62,28 @@
             <i class="fa fa-file-o"></i>&nbsp;
             <span>{{ 'Blank Page' | translate }}</span>
         </a>
+
+        <div class="submenu">
+            <a [routerLink]="['/knowledge-base']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                <i class="fa fa-book"></i>&nbsp;
+                <span>{{ 'Knowledge Base' | translate }}</span>
+            </a>
+        </div>
         <!-- knowledge base menu -->
         <div class="header-fields">
             <div class="nested-menu">
-
-                <a  class="list-group-item" (click)="addExpandClass('knowledgebase')">
+                <a  class="list-group-item dropdown-toggle" (click)="addExpandClass('knowledgebase')">
                     <i class="fa fa-book"></i>&nbsp;
-                    <span>{{ 'Knowledge Base Menu' | translate }}</span>
+                    <span>{{ 'Knowledge Base' | translate }}</span>
                 </a>
                 <li class="nested" [class.expand]="showMenu === 'knowledgebase'">
                     <ul class="submenu">
+                            <li class="nav-item">
+                                    <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span
+                                            class='fa fa-group'></span>{{'My Dashboard' |translate}}</a>
+                                </li>
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link active link-db" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span class='fa fa-group'></span> Dashboard</a>
                         </li>
                         <li class="nav-item">
@@ -80,13 +91,23 @@
                             </li>
                         <div class="vertical">
                         </div>
-                        <li class="nav-item">
-                            <a class="nav-link" [routerLink]="['/knowledge-base/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span class='fa fa-list'></span>My Articles</a>
+=======
+                            <a class="nav-link" [routerLink]="['/knowledge-base/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span class='fa fa-list'></span>{{'My Articles' | translate}}</a>
                         </li>
-                        <div class="vertical">
-                        </div>
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
                         <li class="nav-item">
+                            <a [routerLink]="['/knowledge-base']" [routerLinkActive]="['router-link-active']" class="list-group-item" [routerLinkActiveOptions]={exact:true}>
+                                <i class="fa fa-book"></i>&nbsp;
+                                <span>{{ 'Knowledge Base' | translate }}</span>
+                            </a>
+                            </li>
+
+                        <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" [routerLink]="['/knowledge-base/add']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span class='fa fa-book'></span>Add Articles</a>
+=======
+                            <a class="nav-link" [routerLink]="['/knowledge-base/add']" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span class='fa fa-plus-circle'></span>{{'Add Article' | translate}}</a>
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
                         </li>
                     </ul>
                 </li>
@@ -94,11 +115,14 @@
         </div>
         <!-- Ends Here -->
 
+<<<<<<< HEAD
         <a [routerLink]="['/knowledge-base']" [routerLinkActive]="['router-link-active']" class="list-group-item kbmenu">
             <i class="fa fa-book"></i>&nbsp;
             <span>{{ 'Knowledge Base' | translate }}</span>
         </a>
 
+=======
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
         <div class="header-fields">
             <a (click)="rltAndLtr()" class="list-group-item">
                 <span><i class="fa fa-arrows-h"></i>&nbsp; RTL/LTR</span>

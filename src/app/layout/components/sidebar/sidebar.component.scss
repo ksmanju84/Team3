@@ -146,13 +146,21 @@ $topnav-background-color: #222;
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 992px) {
     .kbmenu {
+=======
+@media screen and (max-width: 992px) {
+    .submenu {
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
         display: none;
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
 ::-webkit-scrollbar {
     width: 8px;
 }

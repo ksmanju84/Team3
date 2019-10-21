@@ -25,6 +25,7 @@ export class ReadmorearticleComponent implements OnInit, OnDestroy {
       }));
     }
     arr: KBArticles;
+<<<<<<< HEAD
     artcle: KBArticles[];
     article: KBArticles[];
     arr1 = [];
@@ -36,6 +37,14 @@ export class ReadmorearticleComponent implements OnInit, OnDestroy {
     ngOnInit() {
         this.spinner=true;
 
+=======
+    read_more: any;
+    isAdmin = false;
+    spinner=false;
+
+    ngOnInit() {
+        this.spinner=true;
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
      this.getByArticleId();
 
 
@@ -50,10 +59,17 @@ export class ReadmorearticleComponent implements OnInit, OnDestroy {
 
       this._data.getArticleById(req)
         .then(res => {
+<<<<<<< HEAD
           if (res) {
             if (!_.isEmpty(res)) {
               this.arr = res;
               this.spinner=false;
+=======
+            if (res) {
+                if (!_.isEmpty(res)) {
+                    this.arr = res;
+                    console.log(this.arr);
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
               // this.read_more = this.arr["kbArticles"];
               console.log(this.arr);
               // this.artcle = _.toArray(this.arr);

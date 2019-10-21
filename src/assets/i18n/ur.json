@@ -1,8 +1,13 @@
 {
     "Knowledge Base":"علم کی بنیاد",
     "Dashboard": "داشبورد",
+<<<<<<< HEAD
     "My Articles":"میرے مضامین۔",
     "My Dashboard":"میرا ڈیش بورڈ",
+=======
+    "My Dashboard": "میرا ڈیش بورڈ",
+    "My Articles":"میرے مضامین۔",
+>>>>>>> 40b0bc49a4610fcc90da7fc4be7b0a5a558cd23f
     "Add Article":"آرٹیکل شامل کریں۔",
     "Charts": "چارت ها",
     "Tables": "جداول",
